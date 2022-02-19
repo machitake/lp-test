@@ -1,0 +1,53 @@
+header {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+}
+
+.header__container{
+    max-width: 192rem;
+    width: 100%;
+    height: 6rem;
+    padding: 0 10rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq('sp') {
+        padding: 0;
+        padding-left: 1.9rem;
+        padding-right: 0.6rem;
+    }
+}
+
+.header_left-img {
+    width: 194px;
+    height: auto;
+
+    @include mq('sp') {
+        width: 158.42px;
+        height: 16.9px;
+    }
+}
+
+.header__right {
+    margin-left: auto;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    @include mq('sp') {
+        margin-right: 9px;
+    }
+}
+
+.header-btn {
+    &:first-child {
+        margin-right: 16px;
+        background: $primary-color;
+    }
+}

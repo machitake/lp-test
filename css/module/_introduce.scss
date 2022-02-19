@@ -1,0 +1,10 @@
+.introduce {
+    margin-top: 80px;
+
+    @include mq('sp') {
+        margin-top: 38px;
+    }
+    img {
+        width: 100%;
+    }
+}

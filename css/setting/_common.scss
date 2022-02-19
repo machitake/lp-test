@@ -1,0 +1,37 @@
+body {
+    font-family: $main-font, sans-serif;
+}
+
+html {
+    font-size: 62.5%;//1remを10pxにする
+    color: $font-color;
+}
+
+.section__ttl {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.4666;
+    letter-spacing: 0.051em;
+
+    &::before , &::after {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        content: '';
+        width: 27.7777778%;
+        border-top: 1px solid #00B5B0;
+
+        @include mq('sp') {
+            width: 7rem;
+        }
+    }
+
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+}

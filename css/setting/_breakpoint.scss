@@ -1,0 +1,14 @@
+//ブレークポイント
+$layout-width-inner: 1200px;
+$breakpoints: (
+  'sp': '(max-width: 767px)', //767px以下（スマホ）用の表示
+  'md': '(min-width: 768px)',//767px以上
+  'sp-h': '(min-width: 376px)',//376px以上
+  );
+
+//メディアクエリ
+@mixin mq($breakpoint: sp) {
+      @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+      }
+}

@@ -1,0 +1,126 @@
+.service {
+    position: relative;
+    margin-top: 146px;
+
+    @include mq('sp') {
+        margin-top: 81px;
+    }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 53%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 91%;
+        max-height: 636px;
+        height: 100%;
+        background: url(../../img/service-bg.png)no-repeat center/contain;
+        z-index: -1;
+
+        @include mq('sp') {
+            width: 64.8rem;
+            height: 21rem;
+            top: 305px;
+            transform: translateX(-50%) rotate(75deg);
+        }
+    }
+}
+
+.service__container {
+    padding: 0 40px;
+
+    @include mq('sp') {
+        padding: 0;
+    }
+}
+
+.service__list {
+    display: flex;
+    justify-content: center;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.service__list__item {
+    position: relative;
+    width: 50%;
+    padding: 0 4rem;
+
+    @include mq('sp') {
+        padding: 0;
+        width: 100%;
+    }
+
+    &:last-child {
+
+        @include mq('sp') {
+            margin-top: 60px;
+        }
+        .service__text {
+            left: inherit;
+            right: 0;
+        }
+    }
+}
+
+.service__img {
+    text-align: right;
+    
+    img {
+        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .16));
+        max-width: 283px;
+        width: 100%;
+
+        @include mq('sp') {
+            width: 230.71px;
+            height: 462.59px;
+        }
+    }
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.service__text {
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+    letter-spacing: 2px;
+    font-size: 30px;
+    background: $service-color;
+    width: 301px;
+    height: 157px;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4666;
+
+    @include mq('sp') {
+        font-size: 24px;
+        width: 245.38px;
+        height: 127.99px;
+        bottom: 26px;
+        letter-spacing: 2px;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 271px;
+        height: 133px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+
+        @include mq('sp') {
+            width: 220.92px;
+            height: 108.42px;
+        }
+    }
+}

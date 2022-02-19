@@ -1,0 +1,207 @@
+.fv {
+    overflow-x: hidden;
+
+    @include mq('sp') {
+        padding-top: 71px;
+    }
+}
+
+.container {
+    max-width: 128rem;
+    height: 100%;
+    padding: 0 10rem;
+    margin: 0 auto;
+
+    @include mq('sp') {
+        padding: 0;
+    }
+}
+
+.fv__container {
+    display: flex;
+    position: relative;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.fv__img-box {
+    position: relative;
+    z-index: 0;
+    width: 50vw;
+    height: 67.7rem;
+    margin-left: calc(50% - 50.4vw);
+    background-color: #36C5C1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../../img/fv-bg.png);
+        width: 44.4rem;
+        height: 44.4rem;
+        top: 56px;
+        right: -96.7rem;
+    }
+
+    @include mq('sp') {
+        position: absolute;
+        z-index: -1;
+        top: -9rem;
+        width: 100vw;
+        height: 56rem;
+        margin: 0;
+        background: none;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: url(../../img/fv-bg-sp.png);
+            width: 15.5rem;
+            height: 15.5rem;
+            right: 0;
+            top: 6rem;
+        }
+    }
+}
+
+.fv__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95.4rem;
+    height: 67.7rem;
+    background: url(../../img/fv.png)no-repeat center/contain;
+
+
+    
+    @include mq('sp') {
+        width: 100%;
+        background: url(../../img/fv-sp.png)no-repeat center/contain;
+        background-size: contain;
+    }
+    @include mq('sp-h') {
+        background-size:cover;
+    }
+}
+
+.fv__content-box {
+    width: 50%;
+
+    @include mq('sp') {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        padding-top: 1.8rem;
+    }
+}
+
+.fv__content {
+    padding-top: 152px;
+    margin-left: 9.2rem;
+
+    @include mq('sp') {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+.ttl__top {
+    width: 39rem;
+    height: 6.6rem;
+    line-height: 6.6rem;
+    background: $main-color;
+    color: #fff;
+    text-align: center;
+    font-size: 2.8rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+
+    @include mq('sp') {
+        width: 28.9rem;
+        height: 4.9rem;
+        line-height: 4.9rem;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+}
+
+.ttl__btm {
+    padding-top: 5.2rem;
+
+    @include mq('sp') {
+        text-align: center;
+        padding-top: 2.45rem;
+    }
+    img {
+        width: 368.84px;
+        height: 47.61px;
+
+        @include mq('sp') {
+            width: 27.37rem;
+            height: 3.533rem;
+        }
+    }
+}
+
+.fv__catch {
+    font-size: 3rem;
+    padding-top: 5.1rem;
+    letter-spacing: 1px;
+
+    @include mq('sp') {
+        font-size: 22px;
+        text-align: center;
+        padding-top: 22px;
+        letter-spacing: 1px;
+    }
+    span {
+        font-size: 2rem;
+        letter-spacing: 5px;
+
+        @include mq('sp') {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    p {
+        &:last-child {
+            color: $main-color;
+            font-size: 5.3rem;
+            padding-top: 2rem;
+            letter-spacing: 3px;
+
+            @include mq('sp') {
+                font-size: 3.9rem;
+                padding-top: 12px;
+            }
+        }
+    }
+}
+
+.fv_btn-box {
+    @include mq('sp') {
+        width: 26.6rem;
+        margin: 0 auto;
+    }
+}
+
+.fv__btn {
+    width: 35.8rem;
+    height: 7.9rem;
+    line-height: 7.9rem;
+    background: $primary-color;
+    margin-top: 4.7rem;
+    font-size: 20px;
+    font-weight: bold;
+
+    @include mq('sp') {
+        width: 26.6rem;
+        height: 5.9rem;
+        line-height: 5.9rem;
+        margin-top: 28.8rem;
+        font-size: 14px;
+    }
+}

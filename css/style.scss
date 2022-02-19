@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "./setting/_color.scss";
+@import "./setting/_fonts.scss";
+@import "./setting/_breakpoint.scss";
+@import "./setting/_btn.scss";
+@import "./setting/_layout.scss";
+@import "./setting/_common.scss";
+@import "./module/_header.scss";
+@import "./module/_fv.scss";
+@import "./module/_about.scss";
+@import "./module/_introduce.scss";
+@import "./module/_service.scss";
+@import "./module/_event.scss";
+
+/*============================================================
+# common -全体に共通するスタイル
+=============================================================*/
+  @include mq('sp') {
+    .is-pc {
+      display: none;
+    }
+  }
+
+  @include mq('md') {
+    .is-sp {
+      display: none;
+    }  
+  }
+
+ 
