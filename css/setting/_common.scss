@@ -21,7 +21,7 @@ html {
         transform: translateY(-50%);
         content: '';
         width: 27.7777778%;
-        border-top: 1px solid #00B5B0;
+        border-top: 1px solid $main-color;
 
         @include mq('sp') {
             width: 7rem;
