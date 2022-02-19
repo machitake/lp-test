@@ -1,7 +1,19 @@
 .feature {
+    position: relative;
     background: $main-color;
     padding-top: 80px;
     margin-top: 60px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../../img/feature-bg.png);
+        width: 444px;
+        height: 444px;
+        top: 50%;
+        right: 50%;
+        transform: translateX(-512px);
+    }
 
     @include mq('sp') {
         margin-top: 86px;
@@ -102,15 +114,11 @@
         .feature__list__item-container {
 
             @include mq('sp') {
-                padding-bottom: 5px;              
+                padding-bottom: 35px;              
             }
         }
 
         .feature__list__item-ttl {
-
-            @include mq('md') {
-                height: calc(31px * 2);
-            }
 
             @include mq('sp') {
                 line-height: 41px;
@@ -180,12 +188,20 @@
 
 .mismatch-head {
     font-size: 26px;
-    margin-top: 91px;
+    margin-top: 84px;
     background: #fff;
     text-align: center;
     line-height: 1.44117647;
     letter-spacing: 0.083em;
     padding: 11px 0;
+
+    @include mq('sp') {
+        font-size: 17px;
+        margin-top: 80px;
+        letter-spacing: 0.04em;
+        line-height: 1.47058824;
+        padding: 18px 0 22px;
+    }
 
     &::before {
         content: '“';
@@ -199,5 +215,114 @@
     .en {
         color: $service-color;
         font-size: 34px;
+
+        @include mq('sp') {
+            font-size: 22px;
+        }
+    }
+}
+
+.mismatch__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+    @include mq('sp') {
+        display: block;
+        padding: 40px 1rem 80px;
+    }
+}
+
+.mismatch__item {
+    position: relative;
+    width: 48.1481%;
+    height: 300px;
+    background: #fff;
+    border-radius: 40px;
+
+    @include mq('sp') {
+        width: 100%;
+    }
+
+    &:nth-child(1) {
+        margin-bottom: 40px;
+
+        @include mq('sp') {
+            margin-bottom: 19px;
+        }
+    }
+    
+    &:nth-child(2) {
+        margin-bottom: 40px;
+
+        @include mq('sp') {
+            margin-bottom: 19px;
+        }
+
+        .mismatch__list-child {
+            margin-top: 15px;
+
+            @include mq('sp') {
+                margin-top: 11px;
+            }
+        }
+    }
+    &:nth-child(3) {
+        margin-bottom: 40px;
+
+        @include mq('sp') {
+            margin-bottom: 19px;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        content: "";
+        width: 93.8462%;
+        height: 266px;
+        border-radius: 40px;
+        border: 1px solid $main-color;
+
+        @include mq('sp') {
+            width: 90.985915%;
+        }
+    }
+    
+}
+
+.mismatch__item-box {
+    position: relative;
+    padding-top: 76px;
+    h3 {
+        font-size: 25px;
+        line-height: 1.44;
+        text-align: center;
+        color: #fff;
+        background: $service-color;
+        padding-top: 5.5px;
+        padding-bottom: 8.5px;
+    }
+}
+
+.mismatch__list-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 33px;
+
+    li {
+        font-size: 16px;
+        line-height: 2.25;
+        letter-spacing: 0.08em;
+
+        &::before {
+            content: "●";
+            color: $main-color;
+        }
     }
 }
