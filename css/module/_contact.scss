@@ -1,0 +1,45 @@
+.contact {
+    background: $main-color;
+    text-align: center;
+
+    h2 {
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 0.051em;
+        line-height: 1.33333333;
+        padding-top: 66px;
+
+        @include mq('sp') {
+            font-size: 24px;
+            line-height: 1.45833333;
+            padding-top: 80px;
+        }
+    }
+}
+
+.contact__btn-box {
+    padding-bottom: 60px;
+
+    @include mq('sp') {
+        padding-bottom: 80px;
+    }
+}
+
+.contact__btn {
+    max-width: 100%;
+    width: 35.8rem;
+    height: 7.9rem;
+    line-height: 7.9rem;
+    background: $primary-color;
+    margin-top: 4.7rem;
+    font-size: 20px;
+    font-weight: bold;
+
+    @include mq('sp') {
+        width: 35.6rem;
+        height: 7.9rem;
+        line-height: 7.9rem;
+        font-size: 20px;
+        margin-top: 62px;
+    }
+}

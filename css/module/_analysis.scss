@@ -1,7 +1,30 @@
+.analysis {
+    padding-top: 80px;
+
+    @include mq('sp') {
+        padding-top: 102px;
+        padding-bottom: 58px;
+    }
+}
+
 .analysis__list {
     display: flex;
     justify-content: space-around;
-    padding-top: 55px;
+    padding-top: 62px;
+    padding-bottom: 7px;
+
+    @include mq('sp') {
+        padding-left: 17.5px;
+        padding-right: 17.5px;
+        padding-top: 48px;
+    }
+
+    &:nth-child(1) {
+        .analysis__list__item {
+            padding-left: 10px;
+        }
+
+    }
 
     @include mq('sp') {
         display: block;
@@ -12,27 +35,62 @@
     width: 25%;
     height: 100%;
 
+    @include mq('sp') {
+        width: 100%;
+        padding-left: 39.5px;
+        padding-right: 39.5px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #C9C9C9;
+    }
+
+    &:not(:first-child) {
+        @include mq('sp') {
+            padding-top: 43px;
+        }
+    }
+
     img {
         width: 100%;
     }
 }
 
 .analysis__list__item-head {
-    min-height: 155px;
+    min-height: 179px;
+
+    @include mq('sp') {
+        min-height: auto;
+    }
 }
 
 .analysis__list__item-ttl {
     font-size: 22px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     line-height: 0.90909091;
     color: $main-color;
     text-align: center;
 }
 
 .analysis__list__item-txt {
+    max-width: 260px;
     font-size: 14px;
     letter-spacing: 0.08em;
     line-height: 1.71428571;
     padding-top: 17px;
     padding-bottom: 22px;
+
+    @include mq('sp') {
+        padding-top: 20px;
+        padding-bottom: 37px;
+    }
+}
+
+
+.analysis__list__item{
+    &:nth-of-type(2) {
+        .analysis__list__item-txt {
+           @include mq('sp') {
+               padding-bottom: 20px;
+           }
+       }
+    }
 }

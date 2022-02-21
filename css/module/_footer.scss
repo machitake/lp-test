@@ -1,0 +1,62 @@
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0 22px;
+    
+    @include mq('sp') {
+        display: block;
+        padding: 37px 0 40px;
+    }
+}
+
+.footer__list {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+    @include mq('sp') {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 22px;
+    }
+    a {
+        margin-left: 20px;  
+        @include mq('sp') {
+            margin-left: 0;
+
+            &:nth-of-type(4) , &:nth-of-type(5) {
+                padding: 32px 0 0;
+            }
+            &:not(:first-child) {
+                margin-left: 24px;
+            }
+
+            &:nth-of-type(4) {
+                margin-left: 0;
+            }
+        }
+    }
+    
+    li {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+
+        @include mq('sp') {
+            font-size: 12px;
+        }
+    }
+}
+
+.copy {
+    margin-right: 27px;
+    letter-spacing: 0.08em;
+
+    @include mq('sp') {
+        text-align: center;
+        color: $main-color;
+        padding-top: 39px;
+        padding-left: 15px;
+        margin: auto;
+    }
+}

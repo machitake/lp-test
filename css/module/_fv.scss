@@ -1,6 +1,9 @@
 .fv {
-    overflow-x: hidden;
 
+    @include mq('md') {
+        overflow-x: hidden;
+    }
+    
     @include mq('sp') {
         padding-top: 71px;
     }
