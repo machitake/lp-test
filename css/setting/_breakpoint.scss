@@ -2,11 +2,12 @@
 $layout-width-inner: 1080px;
 $breakpoints: (
   'sp': '(max-width: 767px)', //767px以下（スマホ）用の表示
-  'sp-up': '(min-width: 375px)',//375px以上
+  'sp-up': 'screen and (min-width: 375px) and (max-width:767px)',//767以下
   'sp-down': '(max-width: 374px)',//374px以下
   'tab': '(min-width: 420px)',//400px以上
-  'md': '(min-width: 768px)',//767px以上
-  'pc': "(min-width: #{$layout-width-inner})",//layout-width-inner以上
+  'tab-up': 'screen and (max-width:#{$layout-width-inner - 1px}) and (min-width:768px)',
+  'md': '(min-width: 768px)',//768px以上
+  'pc': '(min-width: #{$layout-width-inner})',//layout-width-inner以上
   );
 
 //メディアクエリ
@@ -15,3 +16,4 @@ $breakpoints: (
         @content;
       }
 }
+

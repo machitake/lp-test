@@ -1,5 +1,5 @@
 .event {
-    padding-top: 87px;
+    padding-top: 84px;
     
     @include mq('sp') {
         padding-top: 76px;
@@ -35,7 +35,7 @@
 
     img {
         width: 100%;
-        filter: drop-shadow(0 3px 6px rgba(0, 0, 0, .16));
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16); 
     }
 
 
@@ -92,6 +92,9 @@
 .news__item-day {
     width: 16%;
     text-align: right;
+    letter-spacing: 0.051em;
+    line-height: 1.42857;
+    margin-left: 13px;
 
 
     @include mq('sp') {
@@ -103,7 +106,7 @@
 
 .news__item-txt {
     width: calc(100% - 244px - 16%);
-    padding-left: 47px;
+    padding-left: 40    px;
 
     @include mq('sp') {
         width: 100%;
@@ -126,6 +129,7 @@
 }
 
 .recommed__item {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16); 
     img {
         width: 100%;
     }

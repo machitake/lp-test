@@ -89,7 +89,6 @@
 }
 
 .fv__content-box {
-    width: 50%;
 
     @include mq('sp') {
         margin: 0 auto;
@@ -102,11 +101,16 @@
 .fv__content {
     padding-top: 152px;
     margin-left: 9.2rem;
+        
 
     @include mq('sp') {
         margin: 0 auto;
         width: 100%;
         padding: 0;
+    }
+
+    @include mq('tab-up') {
+        margin-left: 60px;
     }
 }
 
@@ -116,6 +120,7 @@
     height: 6.6rem;
     line-height: 6.6rem;
     background: $main-color;
+    letter-spacing: 0.051em;
     color: #fff;
     text-align: center;
     font-size: 2.8rem;
@@ -128,6 +133,7 @@
         font-size: 2rem;
         margin: 0 auto;
     }
+
 }
 
 .ttl__btm {
@@ -150,15 +156,15 @@
 
 .fv__catch {
     font-size: 3rem;
-    padding-top: 5.1rem;
-    letter-spacing: 1px;
+    padding-top: 4.1rem;
+    letter-spacing: 0.051em;
+    line-height: 1.45833333;
     color: #333;
 
     @include mq('sp') {
         font-size: 22px;
         text-align: center;
         padding-top: 22px;
-        letter-spacing: 1px;
     }
     span {
         font-size: 2rem;
@@ -174,7 +180,6 @@
         &:last-child {
             color: $main-color;
             font-size: 5.3rem;
-            padding-top: 2rem;
             letter-spacing: 3px;
 
             @include mq('sp') {
@@ -197,9 +202,10 @@
     height: 7.9rem;
     line-height: 7.9rem;
     background: $primary-color;
-    margin-top: 4.7rem;
+    margin-top: 3.7rem;
     font-size: 20px;
     font-weight: bold;
+    box-shadow: inset 0 3px 6px rgba(255, 255, 255, .16),0 3px 6px rgba(0, 0, 0, .16);  
 
     @include mq('sp') {
         width: 26.6rem;

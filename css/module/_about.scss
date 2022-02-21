@@ -52,7 +52,7 @@
     max-width: 520px;
     width: 100%;
     padding-top: 47.5px;
-    line-height: 1.5;
+    line-height: 1.714428571;
     font-size: 1.4rem;
     color: $font-color;
     font-weight: 500;
@@ -66,7 +66,7 @@
     }
     p {
         &:last-child {
-            padding-top: 33px;
+            padding-top: 21px;
 
             @include mq('sp') {
                 padding-top: 23px;
