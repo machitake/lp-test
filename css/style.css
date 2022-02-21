@@ -30,6 +30,7 @@ body {
 html {
   font-size: 62.5%;
   color: #5C5C5C;
+  font-weight: bold;
 }
 
 .section__ttl {
@@ -38,6 +39,7 @@ html {
   font-size: 30px;
   line-height: 1.4666;
   letter-spacing: 0.051em;
+  color: #333;
 }
 
 .section__ttl::before, .section__ttl::after {
@@ -224,7 +226,7 @@ header {
   }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 375px) {
   .fv__img {
     background-size: cover;
   }
@@ -305,6 +307,7 @@ header {
   font-size: 3rem;
   padding-top: 5.1rem;
   letter-spacing: 1px;
+  color: #333;
 }
 
 @media (max-width: 767px) {
@@ -434,6 +437,7 @@ header {
   line-height: 1.5;
   font-size: 1.4rem;
   color: #5C5C5C;
+  font-weight: 500;
 }
 
 @media (max-width: 767px) {
@@ -817,10 +821,22 @@ header {
   background: url(../../img/feature-bg.png);
   width: 444px;
   height: 444px;
-  top: 50%;
+  top: 42%;
   right: 50%;
   -webkit-transform: translateX(-512px);
           transform: translateX(-512px);
+}
+
+@media (max-width: 767px) {
+  .feature::before {
+    background: url(../../img/feature-bg-sp.png);
+    width: 216.24px;
+    height: 216.24px;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 @media (max-width: 767px) {
@@ -1034,6 +1050,7 @@ header {
   font-size: 26px;
   margin-top: 84px;
   background: #fff;
+  color: #333;
   text-align: center;
   line-height: 1.44117647;
   letter-spacing: 0.083em;
@@ -1402,6 +1419,7 @@ header {
 }
 
 .footer__list a {
+  color: #5C5C5C;
   margin-left: 20px;
 }
 
@@ -1409,14 +1427,35 @@ header {
   .footer__list a {
     margin-left: 0;
   }
-  .footer__list a:nth-of-type(4), .footer__list a:nth-of-type(5) {
-    padding: 32px 0 0;
-  }
   .footer__list a:not(:first-child) {
     margin-left: 24px;
   }
-  .footer__list a:nth-of-type(4) {
-    margin-left: 0;
+}
+
+@media (max-width: 374px) {
+  .footer__list a {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 375px) {
+  .footer__list a:nth-of-type(4), .footer__list a:nth-of-type(5) {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 420px) {
+  .footer__list a {
+    padding-top: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__list a {
+    padding-top: 0;
+  }
+  .footer__list a:nth-of-type(4), .footer__list a:nth-of-type(5) {
+    padding-top: 0;
   }
 }
 

@@ -21,21 +21,37 @@
         padding: 0 22px;
     }
     a {
+        color: $font-color;
         margin-left: 20px;  
         @include mq('sp') {
             margin-left: 0;
-
-            &:nth-of-type(4) , &:nth-of-type(5) {
-                padding: 32px 0 0;
-            }
             &:not(:first-child) {
                 margin-left: 24px;
             }
+        }
 
-            &:nth-of-type(4) {
-                margin-left: 0;
+        @include mq('sp-down') {
+            padding-top: 32px;
+        }
+
+        @include mq('sp-up') {
+            &:nth-of-type(4) , &:nth-of-type(5) {
+                padding-top: 32px;
             }
         }
+
+        @include mq('tab') {
+            padding-top: 32px;
+        }
+
+        @include mq('md') {
+            padding-top: 0;
+
+            &:nth-of-type(4) , &:nth-of-type(5) {
+                padding-top: 0;
+            }
+        }
+        
     }
     
     li {

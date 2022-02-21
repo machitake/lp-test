@@ -5,6 +5,7 @@ body {
 html {
     font-size: 62.5%;//1remを10pxにする
     color: $font-color;
+    font-weight: bold;
 }
 
 .section__ttl {
@@ -13,6 +14,7 @@ html {
     font-size: 30px;
     line-height: 1.4666;
     letter-spacing: 0.051em;
+    color: #333;
 
     &::before , &::after {
         position: absolute;

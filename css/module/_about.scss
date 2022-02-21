@@ -55,6 +55,7 @@
     line-height: 1.5;
     font-size: 1.4rem;
     color: $font-color;
+    font-weight: 500;
 
     @include mq('sp') {
         margin: auto;

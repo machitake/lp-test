@@ -10,9 +10,18 @@
         background: url(../../img/feature-bg.png);
         width: 444px;
         height: 444px;
-        top: 50%;
+        top: 42%;
         right: 50%;
         transform: translateX(-512px);
+
+        @include mq('sp') {
+            background: url(../../img/feature-bg-sp.png);
+            width: 216.24px;
+            height: 216.24px;
+            top: 0;
+            right: 0;
+            transform: translateX(0);
+        }
     }
 
     @include mq('sp') {
@@ -190,6 +199,7 @@
     font-size: 26px;
     margin-top: 84px;
     background: #fff;
+    color: #333;
     text-align: center;
     line-height: 1.44117647;
     letter-spacing: 0.083em;

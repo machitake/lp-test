@@ -83,7 +83,7 @@
         background: url(../../img/fv-sp.png)no-repeat center/contain;
         background-size: contain;
     }
-    @include mq('sp-h') {
+    @include mq('sp-up') {
         background-size:cover;
     }
 }
@@ -152,6 +152,7 @@
     font-size: 3rem;
     padding-top: 5.1rem;
     letter-spacing: 1px;
+    color: #333;
 
     @include mq('sp') {
         font-size: 22px;
